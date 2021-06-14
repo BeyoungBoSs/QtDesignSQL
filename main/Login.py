@@ -53,7 +53,7 @@ def loginButton():
 def forgetP(self):
     # register.setGeometry(100,100,400,400)
     register.show()
-    register.pushButton.setDisabled(False)
+    # register.pushButton.setDisabled(False)
     register.pushButton_2.clicked.connect(close_1)
     register.lineEdit.setClearButtonEnabled(1)
     register.lineEdit_2.setClearButtonEnabled(1)

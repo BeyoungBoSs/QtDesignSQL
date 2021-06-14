@@ -12,7 +12,7 @@ class SqlCorporate:
                              db='onlineContact',
                              charset='utf8')
     # def connect():
-    #     return pymysql.connect(host='192.168。10.132',
+    #     return pymysql.connect(host='192.168.10.132',
     #                          port=3306,
     #                          user='testUser',
     #                          password='748956',

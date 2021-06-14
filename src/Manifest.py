@@ -214,11 +214,11 @@ class Manifest(QtWidgets.QMainWindow):
                     uname=j[1]
                     break
             for flag in re3:
-                if flag[0] and ( ( flag[1]==Manifest.gUid and flag[2]==uid ) or ( flag[2]==Manifest.gUid and flag[1]==uid ) ):
+                if flag[0]==1 and ( ( flag[1]==Manifest.gUid and flag[2]==uid ) or ( flag[2]==Manifest.gUid and flag[1]==uid ) ):
                     self.contactList.list.addItem(uname)
-                elif flag[0] and  flag[2]==Manifest.gUid and flag[1]==uid :
+                elif flag[0]==0 and  flag[2]==Manifest.gUid and flag[1]==uid :
                     self.contactList.list.addItem(uname+'[待确认]')
-            Manifest.urelate[i] = uname
+            Manifest.urelate[uid] = uname
             #未优化速度
         # for i in s:
         #     re2 = SqlCorporate.execute("select uname from users where uid = " + str(i))
@@ -266,7 +266,7 @@ class Manifest(QtWidgets.QMainWindow):
             #s1==s表示没替换
             if s1!=s:
                 re=showMessage(self.contactList,"注意",'是否确认与" '+s1+' "成为好友?',QMessageBox.Yes|QMessageBox.No)
-                print(re)
+                print(Manifest.urelate)
                 new_dict = {v: k for k, v in Manifest.urelate.items()}
                 i = new_dict[s1]
                 if re==QMessageBox.Yes:
