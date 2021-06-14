@@ -287,6 +287,7 @@ class Manifest(QtWidgets.QMainWindow):
                     print(i,type(Manifest.gUid),type(i))
                     sql='DELETE FROM contact WHERE ( uid1 = "'+ str(Manifest.gUid) +'" and uid2 = "'+str(i)+ '" ) or ( uid1 = "'+str(i) +'" and uid2 = "'+str(Manifest.gUid)+'" ) '
                     SqlCorporate.insert(sql)
+                    
                 self.refresh()
 
     #刷新
