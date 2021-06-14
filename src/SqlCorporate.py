@@ -30,10 +30,11 @@ class SqlCorporate:
         # 使用cursor()方法获取操作游标
         cursor = db.cursor()
         max_length=30
-        dirty_stuff = ["\"", "\\", "/", "*", "'", "=", "-", "#", ";", "<", ">", "+", "%", "$", "(", ")", "%", "@", "!"]
+        dirty_stuff = ["\\", "/", "*", "-", "#", ";", "+", "%", "$", "%", "@", "!"]
         for stuff in dirty_stuff:
             sql = sql.replace(stuff, "")
-        sql=sql[:max_length]
+        # sql=sql[:max_length]
+        print(sql)
         try:
             # 执行SQL语句
             cursor.execute(sql)
@@ -60,10 +61,10 @@ class SqlCorporate:
         db = SqlCorporate.connect()
         cursor = db.cursor()
         max_length = 30
-        dirty_stuff = ["\"", "\\", "/", "*", "'", "=", "-", "#", ";", "<", ">", "+", "%", "$", "(", ")", "%", "@", "!"]
+        dirty_stuff = ["\\", "/", "*", "-", "#", ";", "+", "%", "$", "%", "@", "!"]
         for stuff in dirty_stuff:
             sql = sql.replace(stuff, "")
-        sql = sql[:max_length]
+        # sql = sql[:max_length]
         try:
             # 执行sql语句
             cursor.execute(sql)
