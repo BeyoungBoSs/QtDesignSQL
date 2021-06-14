@@ -208,17 +208,24 @@ class Manifest(QtWidgets.QMainWindow):
         sql = 'select flag,uid1,uid2 from contact '
         re3 = SqlCorporate.execute(sql)
         #优化速度
+        list = set()
         for uid in s:
             for j in re2:
                 if j[0]==uid:
                     uname=j[1]
                     break
+
+            # for i in range(self.contactList.list.count()):
+            #     list.add(self.contactList.list.item(i).text().replace("[待确认]", ""))
             for flag in re3:
-                if flag[0]==1 and ( ( flag[1]==Manifest.gUid and flag[2]==uid ) or ( flag[2]==Manifest.gUid and flag[1]==uid ) ):
-                    self.contactList.list.addItem(uname)
-                elif flag[0]==0 and  flag[2]==Manifest.gUid and flag[1]==uid :
-                    self.contactList.list.addItem(uname+'[待确认]')
-            Manifest.urelate[uid] = uname
+                if uname not in list:
+                    if flag[0]==1 and ( ( flag[1]==Manifest.gUid and flag[2]==uid ) or ( flag[2]==Manifest.gUid and flag[1]==uid ) ) :
+                        self.contactList.list.addItem(uname)
+                        list.add(uname)
+                    elif flag[0]==0 and  flag[2]==Manifest.gUid and flag[1]==uid :
+                        self.contactList.list.addItem(uname+'[待确认]')
+                    Manifest.urelate[uid] = uname
+
             #未优化速度
         # for i in s:
         #     re2 = SqlCorporate.execute("select uname from users where uid = " + str(i))
@@ -255,7 +262,6 @@ class Manifest(QtWidgets.QMainWindow):
                         SqlCorporate.insert(sql)
                         self.flag_b.flag2=1
                         self.refresh()
-
                     else:
                         showMessage(self.contactList.list, "注意", '不能添加自己！', QMessageBox.Yes)
                 except:

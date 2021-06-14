@@ -61,10 +61,14 @@ class SqlCorporate:
         db = SqlCorporate.connect()
         cursor = db.cursor()
         max_length = 30
-        dirty_stuff = ["\\", "/", "*", "-", "#", ";", "+", "%", "$", "%", "@", "!"]
+        #INSERT INTO message(uidSend, uidRecipient, message, time) VALUES ('1', '18',  '2',  '20210614 14:11:35')
+
+        #INSERT INTO message(uidSend, uidRecipient, message, time) VALUES ('1', '18',  '2',  '2021-06-14 14:12:23')
+        dirty_stuff = ["\\", "/", "*", "#", ";", "+", "$", "@", "!"]
         for stuff in dirty_stuff:
             sql = sql.replace(stuff, "")
         # sql = sql[:max_length]
+        print(sql)
         try:
             # 执行sql语句
             cursor.execute(sql)
