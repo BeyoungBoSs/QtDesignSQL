@@ -1,5 +1,6 @@
 
 import multiprocessing
+import os
 import random
 import hashlib
 import sys
@@ -35,7 +36,7 @@ def loginButton():
             login.close()
             # app = QApplication(sys.argv)
 
-            manifest = Manifest(uid)
+            manifest = Manifest(uid,resource_path('.'))
             # 显示
             manifest.ui.show()
             # 监听
@@ -157,9 +158,17 @@ def findFunction(self):
 #时间线程
 def time_run():
     while 1:
-        pix = QPixmap('UI/login' + str(random.randint(1, 20)) + '.png')
+        pix = QPixmap(resource_path('UI\\login' + str(random.randint(1, 20)) + '.png'))
         login.pic.setPixmap(pix.scaled(541,239))
         time.sleep(3)
+
+def resource_path(relative_path):
+    if getattr(sys, 'frozen', False): #是否Bundle Resource
+        base_path = sys._MEIPASS
+    else:
+        base_path = os.path.abspath(".")
+    print(os.path.join(base_path, relative_path))
+    return os.path.join(base_path, relative_path)
 
 if __name__ == '__main__':
     # #优化多线程
@@ -167,11 +176,11 @@ if __name__ == '__main__':
     # #主框架运行
     app = QApplication(sys.argv)
     #初始化登录界面
-    login = QUiLoader().load('UI' + '\\' + 'Login.ui')
+    login = QUiLoader().load(resource_path('UI' + '\\' + 'Login.ui'))
     #初始化注册界面等待调用
-    register = QUiLoader().load('UI' + '\\' + 'register.ui')
+    register = QUiLoader().load(resource_path('UI' + '\\' + 'register.ui'))
     #初始化找回密码界面等待调用
-    find = QUiLoader().load('UI' + '\\' + 'find.ui')
+    find = QUiLoader().load(resource_path('UI' + '\\' + 'find.ui'))
     #后台图片刷新线程
     t2 = threading.Thread(target=time_run, args=(), daemon=True)
     t2.start()

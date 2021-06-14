@@ -7,7 +7,7 @@ block_cipher = None
 a = Analysis(['Login.py'],
              pathex=['D:\\Data\\Pycharm Projects\\QtDesignSQL\\main'],
              binaries=[],
-             datas=[("UI","UI")],
+             datas=[('UI','UI')],
              hiddenimports=[],
              hookspath=[],
              runtime_hooks=[],
@@ -31,4 +31,4 @@ exe = EXE(pyz,
           upx=True,
           upx_exclude=[],
           runtime_tmpdir=None,
-          console=False , icon='icon.ico')
+          console=True )

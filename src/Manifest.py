@@ -28,11 +28,13 @@ class Manifest(QtWidgets.QMainWindow):
 
 
     # 初始化
-    def __init__(self, uid):
+    def __init__(self, uid,filename):
         super().__init__()
         self.setUid(uid)
+
         # 获得ui文件
-        self.ui = QUiLoader().load('UI' + '\\' + 'QtDesignSQL.ui')
+        self.ui = QUiLoader().load(filename+ '\\'+'UI' + '\\' + 'QtDesignSQL.ui')
+        print(filename+ '\\UI' + '\\' + 'QtDesignSQL.ui')
         # 定时器
         t = threading.Thread(target=self.time_run, args=(), daemon=True)
         t.start()
@@ -41,7 +43,7 @@ class Manifest(QtWidgets.QMainWindow):
         t1.start()
         # 联系人按钮
         self.ui.contacts.clicked.connect(self.contacts)
-        pix = QPixmap('UI' + '\\' + '1.png')
+        pix = QPixmap(filename+ '\\UI' + '\\' + '1.png')
         self.ui.pic.setPixmap(pix.scaled(90,90))
         # 发送按钮
         self.ui.send.clicked.connect(self.send)
@@ -53,12 +55,19 @@ class Manifest(QtWidgets.QMainWindow):
         # 初始化列表和（uid，uname）的字典
         self.initContactList()
         # self.ui.SQL.setWindowOpacity(0.2)
-        self.contactList = QUiLoader().load('UI' + '\\' + 'contacts.ui')
+        self.contactList = QUiLoader().load(filename+ '\\UI' + '\\' + 'contacts.ui')
         self.flag_b=flag()
-        self.search = QUiLoader().load('UI' + '\\' + 'search.ui')
+        self.search = QUiLoader().load(filename+ '\\UI' + '\\' + 'search.ui')
 
+    def resource1_path(relative_path):
+        if getattr(sys, 'frozen', False):  # 是否Bundle Resource
+            base_path = sys._MEIPASS
+        else:
+            base_path = os.path.abspath(".")
+        print(os.path.join(base_path, relative_path))
+        return os.path.join(base_path, relative_path)
     #获取打包文件资源位置
-    def resource_path(relative_path):
+    def resource_path(self,relative_path):
         if getattr(sys, 'frozen', False):  # 是否Bundle Resource
             base_path = sys._MEIPASS
         else:
