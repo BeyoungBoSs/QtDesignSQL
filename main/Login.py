@@ -79,6 +79,8 @@ def re(self):
     else :
         if s_pwd!=s_secondPwd:
             register.tip.setText(s_emo[random.randint(0, len(s_emo) - 1)] + "密码不一致" + s_emo[random.randint(0, len(s_emo) - 1)])
+        elif len(s_pwd)<5 or len(s_pwd)>20:
+            register.tip.setText(s_emo[random.randint(0, len(s_emo) - 1)] + "密码长度过短或过长" + s_emo[random.randint(0, len(s_emo) - 1)])
         else:
             try:
                 re = SqlCorporate.execute("select uid from users where uname = '" + s_uname + "'")
