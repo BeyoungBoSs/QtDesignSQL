@@ -224,6 +224,7 @@ class Manifest(QtWidgets.QMainWindow):
                         list.add(uname)
                     elif flag[0]==0 and  flag[2]==Manifest.gUid and flag[1]==uid :
                         self.contactList.list.addItem(uname+'[待确认]')
+                        list.add(uname)
                     Manifest.urelate[uid] = uname
 
             #未优化速度
