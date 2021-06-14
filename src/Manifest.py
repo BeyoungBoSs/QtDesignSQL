@@ -1,4 +1,5 @@
 import datetime
+import os
 import sys
 import PySide2.QtXml
 
@@ -56,7 +57,13 @@ class Manifest(QtWidgets.QMainWindow):
         self.flag_b=flag()
         self.search = QUiLoader().load('UI' + '\\' + 'search.ui')
 
-
+    #获取打包文件资源位置
+    def resource_path(relative_path):
+        if getattr(sys, 'frozen', False):  # 是否Bundle Resource
+            base_path = sys._MEIPASS
+        else:
+            base_path = os.path.abspath(".")
+        return os.path.join(base_path, relative_path)
 
     #联系人被选中，修改targetID
     def beClicked(self):
