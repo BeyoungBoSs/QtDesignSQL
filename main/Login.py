@@ -165,8 +165,7 @@ def time_run():
         time.sleep(3)
 
 def version1(self):
-
-
+    contacts.flag = 0
     print(contacts.flag==0)
     if contacts.flag == 0:
 
