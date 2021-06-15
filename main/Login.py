@@ -67,7 +67,7 @@ def forgetP(self):
     register.pushButton.clicked.connect(re)
 
 def close_1(self):
-    contact.flag1=0
+    contacts.flag1=0
     register.close()
 
 #注册界面的确定按钮
@@ -90,7 +90,7 @@ def re(self):
                 time.sleep(0.1)
                 print(re)
                 s=re[0][0]
-                if contact.flag1==0:
+                if contacts.flag1==0:
                     register.tip.setText(s_emo[random.randint(0, len(s_emo) - 1)] + "用户名已存在" + s_emo[random.randint(0, len(s_emo) - 1)])
             except:
                 m = hashlib.md5()
@@ -101,7 +101,7 @@ def re(self):
                 SqlCorporate.insert(sql)
                 register.tip.setText(
                     s_emo[random.randint(0, len(s_emo) - 1)] + "注册成功" + s_emo[random.randint(0, len(s_emo) - 1)])
-                contact.flag1=1
+                contacts.flag1=1
                 register.pushButton.setDisabled(True)
 
 #找回密码
@@ -166,8 +166,7 @@ def time_run():
 
 def version1(self):
 
-    version.pushButton_2.clicked.connect(bu_yes)
-    version.pushButton.clicked.connect(bu_no)
+
     print(contacts.flag==0)
     if contacts.flag == 0:
 
@@ -176,6 +175,8 @@ def version1(self):
     else:
         version.label.setText("-------------------------------------离线版本-------------------------------------")
         version.pushButton.setDisabled(True)
+    version.pushButton_2.clicked.connect(bu_yes)
+    version.pushButton.clicked.connect(bu_no)
     version.show()
 
 #在线切离线

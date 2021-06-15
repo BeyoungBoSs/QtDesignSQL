@@ -1,7 +1,9 @@
 import hashlib
 
-flag=0
 
+flag=0
+flag1=0
+flag2=0
 
 class flag:
 

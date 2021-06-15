@@ -3,7 +3,7 @@ import os
 import sys
 import PySide2.QtXml
 
-
+from main import contacts
 
 sys.path.append('../')
 import PySide2
@@ -277,7 +277,7 @@ class Manifest(QtWidgets.QMainWindow):
                         sql = "INSERT INTO contact(uid1,uid2,flag) VALUES ('%d','%d','%d')" % (Manifest.gUid,t,0)
                         print(sql)
                         SqlCorporate.insert(sql)
-                        self.flag_b.flag2=1
+                        contacts.flag2=1
                         self.refresh()
                     else:
                         showMessage(self.contactList.list, "注意", '不能添加自己！', QMessageBox.Yes)
