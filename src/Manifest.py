@@ -3,7 +3,7 @@ import os
 import sys
 import PySide2.QtXml
 
-from main.contacts import flag
+
 
 sys.path.append('../')
 import PySide2
@@ -56,7 +56,7 @@ class Manifest(QtWidgets.QMainWindow):
         self.initContactList()
         # self.ui.SQL.setWindowOpacity(0.2)
         self.contactList = QUiLoader().load(filename+ '\\UI' + '\\' + 'contacts.ui')
-        self.flag_b=flag()
+        # self.flag_b=flag()
         self.search = QUiLoader().load(filename+ '\\UI' + '\\' + 'search.ui')
 
     def resource1_path(relative_path):

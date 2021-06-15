@@ -10,6 +10,8 @@ from PySide2.QtGui import QPixmap
 from PySide2.QtUiTools import QUiLoader
 from PySide2.QtWidgets import QApplication, QLineEdit, QMessageBox
 
+# from main.contacts import flag
+from main import contacts
 from main.contacts import flag
 
 sys.path.append('../')
@@ -162,6 +164,35 @@ def time_run():
         login.pic.setPixmap(pix.scaled(541,239))
         time.sleep(3)
 
+def version1(self):
+
+    version.pushButton_2.clicked.connect(bu_yes)
+    version.pushButton.clicked.connect(bu_no)
+    print(contacts.flag==0)
+    if contacts.flag == 0:
+
+        version.label.setText("-------------------------------------在线版本-------------------------------------")
+        version.pushButton_2.setDisabled(True)
+    else:
+        version.label.setText("-------------------------------------离线版本-------------------------------------")
+        version.pushButton.setDisabled(True)
+    version.show()
+
+#在线切离线
+def bu_no(self):
+    version.pushButton_2.setDisabled(False)
+    version.pushButton.setDisabled(True)
+    contacts.flag = 1
+    version.label.setText("-------------------------------------离线版本-------------------------------------")
+
+
+def bu_yes(self):
+    version.pushButton_2.setDisabled(True)
+    version.pushButton.setDisabled(False)
+    contacts.flag = 0
+    version.label.setText("-------------------------------------在线版本-------------------------------------")
+
+
 def resource_path(relative_path):
     if getattr(sys, 'frozen', False): #是否Bundle Resource
         base_path = sys._MEIPASS
@@ -181,6 +212,8 @@ if __name__ == '__main__':
     register = QUiLoader().load(resource_path('UI' + '\\' + 'register.ui'))
     #初始化找回密码界面等待调用
     find = QUiLoader().load(resource_path('UI' + '\\' + 'find.ui'))
+    #切换版本
+    version = QUiLoader().load(resource_path('UI' + '\\' + 'version.ui'))
     #后台图片刷新线程
     t2 = threading.Thread(target=time_run, args=(), daemon=True)
     t2.start()
@@ -193,7 +226,9 @@ if __name__ == '__main__':
     #绑定按钮-忘记密码
     login.regeist.clicked.connect(forgetP)
     #绑定按钮-找回密码
+
     login.forget.clicked.connect(findBack)
+    login.version.clicked.connect(version1)
     # 显示
     login.show()
     sys.exit(app.exec_())

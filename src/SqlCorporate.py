@@ -1,23 +1,28 @@
 import pymysql
 
+from main import contacts
+
 
 class SqlCorporate:
 
     #连接数据库
     def connect():
-        return pymysql.connect(host='1.xcycloud.xyz',
+        print('!'+str(contacts.flag))
+        if contacts.flag==0:
+            return pymysql.connect(host='1.xcycloud.xyz',
                              port=54312,
                              user='testUser',
                              password='748956',
                              db='onlineContact',
                              charset='utf8')
     # def connect():
-    #     return pymysql.connect(host='192.168.10.132',
-    #                          port=3306,
-    #                          user='testUser',
-    #                          password='748956',
-    #                          db='onlineContact',
-    #                          charset='utf8')
+        else:
+            return pymysql.connect(host='192.168.10.132',
+                                 port=3306,
+                                 user='testUser',
+                                 password='748956',
+                                 db='onlineContact',
+                                 charset='utf8')
     #关闭数据库
     def close(db):
         db.close()

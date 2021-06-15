@@ -1,5 +1,7 @@
 import hashlib
 
+flag=0
+
 
 class flag:
 
