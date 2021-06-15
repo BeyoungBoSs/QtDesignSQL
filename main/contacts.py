@@ -1,8 +1,10 @@
 import hashlib
 
-
+#判断版本在线或者离线
 flag=0
+#判断注册状态
 flag1=0
+#判断增加联系人
 flag2=0
 
 class flag:
