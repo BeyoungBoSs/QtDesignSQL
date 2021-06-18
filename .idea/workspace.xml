@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f4be1b4d-0caf-49f8-9d8b-3e22cfdfbfd3" name="默认更改列表" comment="" />
+    <list default="true" id="f4be1b4d-0caf-49f8-9d8b-3e22cfdfbfd3" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/main/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/build/Login/Analysis-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/main/build/Login/Analysis-00.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/build/Login/EXE-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/main/build/Login/EXE-00.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/build/Login/PKG-00.pkg" beforeDir="false" afterPath="$PROJECT_DIR$/main/build/Login/PKG-00.pkg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/build/Login/PKG-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/main/build/Login/PKG-00.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/build/Login/PYZ-00.pyz" beforeDir="false" afterPath="$PROJECT_DIR$/main/build/Login/PYZ-00.pyz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/build/Login/PYZ-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/main/build/Login/PYZ-00.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/build/Login/warn-Login.txt" beforeDir="false" afterPath="$PROJECT_DIR$/main/build/Login/warn-Login.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/build/Login/xref-Login.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/build/Login/xref-Login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manifest.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manifest.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,28 +67,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main/Login.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Manifest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="QtDesignSQL" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/main" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\Data\Pycharm Projects\QtDesignSQL\src\Manifest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -151,16 +141,39 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="QtDesignSQL" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/main" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.Login" />
-      <item itemvalue="Python.Manifest" />
       <item itemvalue="Python.contacts" />
       <item itemvalue="Python.info" />
       <item itemvalue="Python.main" />
+      <item itemvalue="Python.test" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.Login" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.contacts" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.info" />
@@ -208,7 +221,7 @@
       <workItem from="1623569226677" duration="9857000" />
       <workItem from="1623636744770" duration="3364000" />
       <workItem from="1623658257739" duration="3777000" />
-      <workItem from="1623727464775" duration="5651000" />
+      <workItem from="1623727464775" duration="10794000" />
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
@@ -237,45 +250,45 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1623299582832" />
-    <state width="1877" height="260" key="GridCell.Tab.0.bottom" timestamp="1623758352739">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1623767483243">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="260" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1623758352739" />
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1623767483243" />
     <state width="2517" height="371" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1623660406775" />
-    <state width="1877" height="260" key="GridCell.Tab.0.center" timestamp="1623758352739">
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1623767483243">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="260" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1623758352739" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1623767483243" />
     <state width="2517" height="371" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1623660406775" />
-    <state width="1877" height="260" key="GridCell.Tab.0.left" timestamp="1623758352739">
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1623767483243">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="260" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1623758352739" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1623767483243" />
     <state width="2517" height="371" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1623660406775" />
-    <state width="1877" height="260" key="GridCell.Tab.0.right" timestamp="1623758352739">
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1623767483243">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="260" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1623758352739" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1623767483243" />
     <state width="2517" height="371" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1623660406775" />
-    <state width="2517" height="492" key="GridCell.Tab.1.bottom" timestamp="1623680573546">
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1623767483244">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="2517" height="492" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1623680573546" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1623767483244" />
     <state width="2517" height="492" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1623659010389" />
-    <state width="2517" height="492" key="GridCell.Tab.1.center" timestamp="1623680573545">
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1623767483243">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="2517" height="492" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1623680573545" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1623767483243" />
     <state width="2517" height="492" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1623659010389" />
-    <state width="2517" height="492" key="GridCell.Tab.1.left" timestamp="1623680573545">
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1623767483243">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="2517" height="492" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1623680573545" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1623767483243" />
     <state width="2517" height="492" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1623659010389" />
-    <state width="2517" height="492" key="GridCell.Tab.1.right" timestamp="1623680573545">
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1623767483243">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="2517" height="492" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1623680573545" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1623767483243" />
     <state width="2517" height="492" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1623659010389" />
     <state x="463" y="165" key="SettingsEditor" timestamp="1623295992528">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -303,23 +316,28 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/Manifest.py</url>
-          <line>237</line>
+          <line>242</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/Manifest.py</url>
-          <line>231</line>
+          <line>237</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/Manifest.py</url>
-          <line>220</line>
+          <line>226</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/Manifest.py</url>
-          <line>228</line>
+          <line>234</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main/test.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -341,12 +359,12 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/QtDesignSQL$main.coverage" NAME="main Coverage Results" MODIFIED="1623239124994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main" />
-    <SUITE FILE_PATH="coverage/QtDesignSQL$Login.coverage" NAME="Login Coverage Results" MODIFIED="1623758352734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main" />
+    <SUITE FILE_PATH="coverage/QtDesignSQL$Login.coverage" NAME="Login Coverage Results" MODIFIED="1623764363813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main" />
     <SUITE FILE_PATH="coverage/QtDesignSQL$SqlCorporate.coverage" NAME="SqlCorporate Coverage Results" MODIFIED="1622956224745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main" />
     <SUITE FILE_PATH="coverage/QtDesignSQL$t.coverage" NAME="t Coverage Results" MODIFIED="1622969064867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main" />
     <SUITE FILE_PATH="coverage/QtDesignSQL$info.coverage" NAME="info Coverage Results" MODIFIED="1623211178103" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main" />
     <SUITE FILE_PATH="coverage/QtDesignSQL$contacts.coverage" NAME="contacts Coverage Results" MODIFIED="1623326076964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main" />
-    <SUITE FILE_PATH="coverage/QtDesignSQL$test.coverage" NAME="Manifest Coverage Results" MODIFIED="1622466802146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main" />
+    <SUITE FILE_PATH="coverage/QtDesignSQL$test.coverage" NAME="test Coverage Results" MODIFIED="1623762066110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main" />
     <SUITE FILE_PATH="coverage/QtDesignSQL$Manifest__1_.coverage" NAME="Manifest (1) Coverage Results" MODIFIED="1623063328511" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main" />
   </component>
 </project>
